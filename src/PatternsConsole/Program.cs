@@ -64,8 +64,10 @@ namespace PatternsConsole
                         patternIndex--;
                         var patternRunner = patternRunners[patternIndex];
 
-                        Console.WriteLine($"Examples:\n{patternRunner.Examples}\n");
-                        Console.WriteLine($"Concequenses:\n{patternRunner.Consequences}\n");
+                        Console.WriteLine($"Pattern: {patternRunner.Name}");
+                        Console.WriteLine($"Applicability:\nUse when{patternRunner.Applicability}\n");
+                        Console.WriteLine($"Concequenses:{patternRunner.Consequences}\n");
+                        Console.WriteLine("Running pattern demo:");
                         patternRunner.Run();
                         Console.WriteLine("");
                     }
@@ -83,20 +85,5 @@ namespace PatternsConsole
             Console.WriteLine("");
             return input;
         }
-    }
-
-    public interface IPatternRunner
-    {
-        void Run();
-
-        PatternCategory Category { get; }
-        string  Name { get; }
-        string Consequences { get; }
-        string Examples { get; }
-    }
-
-    public enum PatternCategory
-    {
-        Creational
     }
 }

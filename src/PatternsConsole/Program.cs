@@ -29,7 +29,7 @@ namespace PatternsConsole
 
             while(true)
             {
-                Console.WriteLine("Select pattern, x to exit:");
+                Console.WriteLine("Select pattern, 0 to exit:");
                 var i = 0;
 
                 foreach (var patternRunnerGroup in groupedRunners)
@@ -44,7 +44,7 @@ namespace PatternsConsole
 
                 
                 var selection = GetConsoleLineInput();
-                if (selection == "x")
+                if (selection == "0")
                     return;
 
                 int patternIndex;
@@ -65,10 +65,12 @@ namespace PatternsConsole
                         var patternRunner = patternRunners[patternIndex];
 
                         Console.WriteLine($"Pattern: {patternRunner.Name}");
+                        Console.Write(patternRunner.AlsoKnownAs.IsNullOrEmpty() ? "" : $"Also known as: {patternRunner.AlsoKnownAs}\n");
                         Console.WriteLine($"Applicability:\nUse when{patternRunner.Applicability}\n");
                         Console.WriteLine($"Concequenses:{patternRunner.Consequences}\n");
-                        Console.WriteLine("Running pattern demo:");
+                        Console.WriteLine("Demo start.");
                         patternRunner.Run();
+                        Console.WriteLine("\nDemo end.");
                         Console.WriteLine("");
                     }
                 }

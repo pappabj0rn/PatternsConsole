@@ -9,6 +9,8 @@ namespace PatternsConsole.Creational.AbstractFactory
         public override PatternCategory Category => PatternCategory.Creational;
 
         public override string Name => "Abstract Factory";
+        public override string PageRef => "87";
+        public override string AlsoKnownAs => "Kit";
 
         protected override string[] ConsequencesLines => new []
         {

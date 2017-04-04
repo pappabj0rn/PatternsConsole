@@ -64,7 +64,7 @@ namespace PatternsConsole
                         patternIndex--;
                         var patternRunner = patternRunners[patternIndex];
 
-                        Console.WriteLine($"Pattern: {patternRunner.Name}");
+                        Console.WriteLine($"Pattern: {patternRunner.Name}, p.{patternRunner.PageRef}");
                         Console.Write(patternRunner.AlsoKnownAs.IsNullOrEmpty() ? "" : $"Also known as: {patternRunner.AlsoKnownAs}\n");
                         Console.WriteLine($"Applicability:\nUse when{patternRunner.Applicability}\n");
                         Console.WriteLine($"Concequenses:{patternRunner.Consequences}\n");

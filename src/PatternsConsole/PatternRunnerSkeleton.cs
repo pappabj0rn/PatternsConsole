@@ -1,7 +1,7 @@
 ﻿/*
 namespace PatternsConsole
 {
-    public class PatternRunnerSkeleton : PatternRunnerBase
+    public class CompositeRunner : PatternRunnerBase
     {
         public override void Run()
         {
@@ -12,11 +12,12 @@ namespace PatternsConsole
         public override string Name => "Name";
         public override string PageRef => "page_in_book";
 
-        protected override string[] ConsequencesLines => new[]
+        protected override string[] ApplicabilityLines => new[]
         {
             "",
         };
-        protected override string[] ApplicabilityLines => new[]
+
+        protected override string[] ConsequencesLines => new[]
         {
             "",
         };

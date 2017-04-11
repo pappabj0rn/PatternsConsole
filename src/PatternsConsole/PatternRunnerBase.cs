@@ -11,6 +11,12 @@ namespace PatternsConsole
         public abstract string PageRef { get; }
         public virtual string AlsoKnownAs => "";
 
+        public virtual string Applicability
+        {
+            get { return ApplicabilityLines.Aggregate("", (c, n) => $"{c}\n{n}"); }
+        }
+        protected abstract string[] ApplicabilityLines { get; }
+
         public virtual string Consequences
         {
             get
@@ -21,12 +27,6 @@ namespace PatternsConsole
         }
 
         protected abstract string[] ConsequencesLines { get; }
-
-        public virtual string Applicability
-        {
-            get { return ApplicabilityLines.Aggregate("", (c, n) => $"{c}\n{n}"); }
-        }
-        protected abstract string[] ApplicabilityLines { get; }
         
     }
 }

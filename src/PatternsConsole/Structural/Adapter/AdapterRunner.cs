@@ -43,40 +43,4 @@ namespace PatternsConsole.Structural.Adapter
             "  adapter cab adapt the interface of its parent class."
         };
     }
-
-    public interface ITarget
-    {
-        void SayHelloWorld();
-    }
-
-    public class Adaptee
-    {
-        public virtual void ConsoleWriteMsg(string msg)
-        {
-            Console.Write(msg);
-        }
-    }
-
-    public class ClassAdaptor : Adaptee, ITarget
-    {
-        public void SayHelloWorld()
-        {
-            ConsoleWriteMsg("Hello World");
-        }
-    }
-
-    public class ObjectAdaptor : ITarget
-    {
-        private readonly Adaptee _adaptee;
-
-        public ObjectAdaptor(Adaptee adaptee)
-        {
-            _adaptee = adaptee;
-        }
-
-        public void SayHelloWorld()
-        {
-            _adaptee.ConsoleWriteMsg("Hello World");
-        }
-    }
 }

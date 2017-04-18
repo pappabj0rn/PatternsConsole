@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace PatternsConsole
 {
@@ -27,6 +29,40 @@ namespace PatternsConsole
         }
 
         protected abstract string[] ConsequencesLines { get; }
-        
+
+        protected string BreakLine(string input, string newlineStart = "  ", int lineLength = 80)
+        {
+            var words = input.Split(' ').ToList();
+
+            var resultSb = new StringBuilder();
+            var currentLineSb = new StringBuilder();
+
+            while (words.Count > 0)
+            {
+                while (words.Count > 0 && currentLineSb.Length + words[0].Length +3 <= lineLength)
+                {
+                    if(currentLineSb.Length > 0)
+                        currentLineSb.Append(' ');
+
+                    currentLineSb.Append(words[0]);
+                    words.RemoveAt(0);
+                }
+
+                if (words.Count <= 0)
+                {
+                    resultSb.Append(currentLineSb);
+                    break;
+                }
+                    
+
+                currentLineSb.Append('\n');
+                currentLineSb.Append(newlineStart);
+
+                resultSb.Append(currentLineSb);
+                currentLineSb = new StringBuilder();
+            }
+
+            return resultSb.ToString();
+        }
     }
 }

@@ -13,9 +13,11 @@ namespace PatternsConsole
         public abstract string PageRef { get; }
         public virtual string AlsoKnownAs => "";
 
+        public virtual string ApplicabilityLeadin => "Use when";
+
         public virtual string Applicability
         {
-            get { return ApplicabilityLines.Aggregate("", (c, n) => $"{c}\n{n}"); }
+            get { return ApplicabilityLines.Aggregate("", (c, n) => $"{c}\n* {n}"); }
         }
         protected abstract string[] ApplicabilityLines { get; }
 
@@ -30,7 +32,7 @@ namespace PatternsConsole
 
         protected abstract string[] ConsequencesLines { get; }
 
-        protected string BreakLine(string input, string newlineStart = "  ", int lineLength = 80)
+        protected string BreakLine(string input, string newlineStart = "  ", int lineLength = 60)
         {
             var words = input.Split(' ').ToList();
 

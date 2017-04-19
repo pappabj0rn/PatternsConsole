@@ -66,12 +66,13 @@ namespace PatternsConsole
 
                         Console.WriteLine($"Pattern: {patternRunner.Name}, p.{patternRunner.PageRef}");
                         Console.Write(patternRunner.AlsoKnownAs.IsNullOrEmpty() ? "" : $"Also known as: {patternRunner.AlsoKnownAs}\n");
-                        Console.WriteLine($"Applicability:\nUse when{patternRunner.Applicability}\n");
+                        Console.WriteLine($"Applicability:\n{patternRunner.ApplicabilityLeadin}{patternRunner.Applicability}\n");
                         Console.WriteLine($"Concequenses:{patternRunner.Consequences}\n");
-                        Console.WriteLine("Demo start.");
+                        Console.WriteLine("Demo start.\n");
+
                         patternRunner.Run();
-                        Console.WriteLine("\nDemo end.");
-                        Console.WriteLine("");
+
+                        Console.WriteLine("\nDemo end.\n");
                     }
                 }
             }

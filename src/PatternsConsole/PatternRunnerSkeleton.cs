@@ -1,7 +1,7 @@
 ﻿/*
 namespace PatternsConsole
 {
-    public class CompositeRunner : PatternRunnerBase
+    public class XxxRunner : PatternRunnerBase
     {
         public override void Run()
         {

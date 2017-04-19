@@ -37,9 +37,9 @@ namespace PatternsConsole.Creational.FactoryMethod
         };
         protected override string[] ApplicabilityLines => new[]
         {
-            "a class can't anticipate the class of onjects it must create.",
-            "a class wants its subclasses to specify the objects it creates.",
-            "classes delegate responsibility to one of several helper subsclasses, and you want to localize the knowledge of which helper subclass is the delegate."
+            BreakLine("a class can't anticipate the class of onjects it must create."),
+            BreakLine("a class wants its subclasses to specify the objects it creates."),
+            BreakLine("classes delegate responsibility to one of several helper subsclasses, and you want to localize the knowledge of which helper subclass is the delegate.")
         };
     }
 }

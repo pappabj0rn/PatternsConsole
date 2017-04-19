@@ -35,8 +35,8 @@ namespace PatternsConsole.Creational.Singleton
         };
         protected override string[] ApplicabilityLines => new[]
         {
-            "there must be exactly one instance of a class, and if it must be accessible to clients from a well-known access point.",
-            "when the sole instance should be extensible bu subclassing and clients should be able to use an extended instance without modifying their code."
+            BreakLine("there must be exactly one instance of a class, and if it must be accessible to clients from a well-known access point."),
+            BreakLine("when the sole instance should be extensible bu subclassing and clients should be able to use an extended instance without modifying their code.")
         };
     }
 }

@@ -18,9 +18,8 @@
 
         protected override string[] ApplicabilityLines => new[]
         {
-            "you want to represent part-whole hierarchies of objects.",
-            "you want clients to be able to ignore the difference between composition of objects and individual objects.\n"+
-            "  Clients will treat all objects in the composite structure uniformly."
+            BreakLine("you want to represent part-whole hierarchies of objects."),
+            BreakLine("you want clients to be able to ignore the difference between composition of objects and individual objects. Clients will treat all objects in the composite structure uniformly.")
         };
 
         protected override string[] ConsequencesLines => new[]

@@ -55,9 +55,9 @@ namespace PatternsConsole.Creational.Prototype
         };
         protected override string[] ApplicabilityLines => new[]
         {
-            "when the classes to instantiate are specified at run-time, for example by dynamic loading; or",
-            "to avoid buildning a class hierarchy of factories that parallels the class hierarchy of product; or",
-            "when instances of a class can have one of only a few different combintations of state. It may be more convenient to install a corresponding number of prototypes and clone them rather than instantiating the class manually, each time with the appropriate state."
+            BreakLine("when the classes to instantiate are specified at run-time, for example by dynamic loading; or"),
+            BreakLine("to avoid buildning a class hierarchy of factories that parallels the class hierarchy of product; or"),
+            BreakLine("when instances of a class can have one of only a few different combintations of state. It may be more convenient to install a corresponding number of prototypes and clone them rather than instantiating the class manually, each time with the appropriate state.")
         };
     }
 }

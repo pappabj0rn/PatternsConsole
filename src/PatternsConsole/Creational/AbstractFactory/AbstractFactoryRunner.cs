@@ -22,10 +22,10 @@ namespace PatternsConsole.Creational.AbstractFactory
 
         protected override string[] ApplicabilityLines => new []
         {
-            "a system should be independent of how its products are created, composed and represented.",
-            "a system should be configured with one of multiple families of products.",
-            "a family of related product objects is designed to be used together, and you need to enforce this constraint.",
-            "you want to provide a class library of products, and you want to reveal just their interfaces, not their implementations."
+            BreakLine("a system should be independent of how its products are created, composed and represented."),
+            BreakLine("a system should be configured with one of multiple families of products."),
+            BreakLine("a family of related product objects is designed to be used together, and you need to enforce this constraint."),
+            BreakLine("you want to provide a class library of products, and you want to reveal just their interfaces, not their implementations.")
         };
 
         public override void Run()

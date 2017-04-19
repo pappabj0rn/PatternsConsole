@@ -33,14 +33,9 @@ namespace PatternsConsole.Structural.Adapter
         };
         protected override string[] ApplicabilityLines => new[]
         {
-            "* you want to use an existing class, and its interface does not match the one",
-            "  you need.",
-            "* you want to create a resusable class that cooperates with unrelated or",
-            "  unforeseen classes, that is, classes that don't necessarily have compatible",
-            "  interfaces.",
-            "* (object adapter only) you need to use several existing subclasses, but it's",
-            "  impractical to adapt their interface by subclassing every one. An object",
-            "  adapter cab adapt the interface of its parent class."
+            BreakLine("you want to use an existing class, and its interface does not match the one you need."),
+            BreakLine("you want to create a resusable class that cooperates with unrelated or unforeseen classes, that is, classes that don't necessarily have compatible interfaces."),
+            BreakLine("(object adapter only) you need to use several existing subclasses, but it's impractical to adapt their interface by subclassing every one. An objectadapter cab adapt the interface of its parent class."),
         };
     }
 }

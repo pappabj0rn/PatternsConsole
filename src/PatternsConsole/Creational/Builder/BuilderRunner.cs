@@ -18,8 +18,8 @@ namespace PatternsConsole.Creational.Builder
 
         protected override string[] ApplicabilityLines => new[]
         {
-            "the algorith for creating a complex object should be independent of the parts that make up the object and how they're assembled.",
-            "the construction process must allow different representations fot the object that's constructed."
+            BreakLine("the algorith for creating a complex object should be independent of the parts that make up the object and how they're assembled."),
+            BreakLine("the construction process must allow different representations fot the object that's constructed.")
         };
 
         public override void Run()

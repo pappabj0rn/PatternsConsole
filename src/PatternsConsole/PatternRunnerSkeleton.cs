@@ -14,7 +14,7 @@ namespace PatternsConsole
 
         protected override string[] ApplicabilityLines => new[]
         {
-            "",
+            BreakLine(""),
         };
 
         protected override string[] ConsequencesLines => new[]

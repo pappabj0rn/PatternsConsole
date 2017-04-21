@@ -10,6 +10,7 @@ namespace PatternsConsole
 
         public override PatternCategory Category => PatternCategory.Structural;
         public override string Name => "Name";
+        public override string Description => BreakLine("Description");
         public override string PageRef => "page_in_book";
 
         protected override string[] ApplicabilityLines => new[]

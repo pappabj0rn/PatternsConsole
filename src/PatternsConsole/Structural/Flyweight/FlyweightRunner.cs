@@ -48,6 +48,7 @@ namespace PatternsConsole.Structural.Flyweight
 
         public override PatternCategory Category => PatternCategory.Structural;
         public override string Name => "Flyweight";
+        public override string Description => BreakLine("Use sharein to support large numbers of fine-grained objects efficiently.");
         public override string PageRef => "195";
 
         public override string ApplicabilityLeadin => BreakLine("The Flyweight pattern's effectiveness depends heavily on how and where it's used. Apply the Flyweight pattern when _all_ of the following are true:",newlineStart:"",lineLength:80);

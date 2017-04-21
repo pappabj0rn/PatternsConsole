@@ -9,6 +9,7 @@ namespace PatternsConsole.Creational.AbstractFactory
         public override PatternCategory Category => PatternCategory.Creational;
 
         public override string Name => "Abstract Factory";
+        public override string Description => BreakLine("Provide an interface for creatign families of related or dependent objects without specifying their concrete classes.");
         public override string PageRef => "87";
         public override string AlsoKnownAs => "Kit";
 

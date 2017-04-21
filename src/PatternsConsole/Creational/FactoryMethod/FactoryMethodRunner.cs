@@ -28,6 +28,7 @@ namespace PatternsConsole.Creational.FactoryMethod
 
         public override PatternCategory Category => PatternCategory.Creational;
         public override string Name => "Factory Method";
+        public override string Description => BreakLine("Define an interface for creating an object, but let subclasse decide wich class to instantiate. Factory Method lets a class defer instantiation to subclasses.");
         public override string PageRef => "107";
         public override string AlsoKnownAs => "Virtual Constructor";
         protected override string[] ConsequencesLines => new[]

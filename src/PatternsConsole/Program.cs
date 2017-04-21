@@ -38,7 +38,7 @@ namespace PatternsConsole
 
                     foreach (var patternRunner in patternRunnerGroup)
                     {
-                        Console.WriteLine($"\t{++i}: {patternRunner.Name}");
+                        Console.WriteLine($"{++i,4:##}: {patternRunner.Name}");
                     }
                 }
 
@@ -64,9 +64,9 @@ namespace PatternsConsole
                         patternIndex--;
                         var patternRunner = patternRunners[patternIndex];
 
-                        Console.WriteLine($"Pattern: {patternRunner.Name}, p.{patternRunner.PageRef}");
-                        Console.Write(patternRunner.AlsoKnownAs.IsNullOrEmpty() ? "" : $"Also known as: {patternRunner.AlsoKnownAs}\n");
-                        Console.WriteLine($"Applicability:\n{patternRunner.ApplicabilityLeadin}{patternRunner.Applicability}\n");
+                        Console.WriteLine($"Pattern: {patternRunner.Name}, p.{patternRunner.PageRef}\n  {patternRunner.Description}");
+                        Console.Write(patternRunner.AlsoKnownAs.IsNullOrEmpty() ? "" : $"\nAlso known as: {patternRunner.AlsoKnownAs}\n");
+                        Console.WriteLine($"\nApplicability:\n{patternRunner.ApplicabilityLeadin}{patternRunner.Applicability}\n");
                         Console.WriteLine($"Concequenses:{patternRunner.Consequences}\n");
                         Console.WriteLine("Demo start.\n");
 

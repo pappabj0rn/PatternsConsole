@@ -6,7 +6,11 @@ namespace PatternsConsole.Structural.Flyweight
     {
         public override void Draw(GlyphContext context)
         {
+            if(context.ForceVisual)
+                Console.Write("[");
             Children.ForEach(x => x.Draw(context));
+            if (context.ForceVisual)
+                Console.Write("]");
             Console.Write("\n");
         }
     }

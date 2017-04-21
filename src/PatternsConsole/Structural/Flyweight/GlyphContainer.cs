@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace PatternsConsole.Structural.Flyweight
 {
-    public class GlyphContainer : Glyph, IGlyphContainer
+    public class GlyphContainer : Glyph
     {
         protected List<Glyph> Children;
 

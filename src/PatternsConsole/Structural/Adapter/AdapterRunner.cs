@@ -17,6 +17,7 @@ namespace PatternsConsole.Structural.Adapter
 
         public override PatternCategory Category => PatternCategory.Structural;
         public override string Name => "Adapter";
+        public override string Description => BreakLine("Convert the interface if a class into another interface clients expect. Adapter lets classes work together that couldnät otherwise because of incompatible interfaces.");
         public override string AlsoKnownAs => "Wrapper";
         public override string PageRef => "139";
 

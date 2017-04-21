@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 
 namespace PatternsConsole
@@ -10,6 +9,7 @@ namespace PatternsConsole
 
         public abstract PatternCategory Category { get; }
         public abstract string Name { get; }
+        public virtual string Description => "";
         public abstract string PageRef { get; }
         public virtual string AlsoKnownAs => "";
 

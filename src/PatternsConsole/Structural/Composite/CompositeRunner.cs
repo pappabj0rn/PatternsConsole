@@ -14,6 +14,7 @@
 
         public override PatternCategory Category => PatternCategory.Structural;
         public override string Name => "Composite";
+        public override string Description => BreakLine("Compose objects into tree structures to represent part-whole hierarchies. Composite lets clientstreat individual objects and compositions of objects uniformly.");
         public override string PageRef => "163";
 
         protected override string[] ApplicabilityLines => new[]

@@ -43,6 +43,7 @@ namespace PatternsConsole.Creational.Prototype
 
         public override PatternCategory Category => PatternCategory.Creational;
         public override string Name => "Prototype";
+        public override string Description => BreakLine("Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.");
         public override string PageRef => "117";
 
         protected override string[] ConsequencesLines => new[]

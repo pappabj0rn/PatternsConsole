@@ -7,6 +7,7 @@ namespace PatternsConsole.Creational.Builder
         public override PatternCategory Category => PatternCategory.Creational;
 
         public override string Name => "Builder";
+        public override string Description => BreakLine("Separate the construction of a complex object from its representation so that the same construction process can create different representations.");
         public override string PageRef => "97";
 
         protected override string[] ConsequencesLines => new[]

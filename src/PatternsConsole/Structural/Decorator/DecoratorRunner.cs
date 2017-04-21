@@ -15,6 +15,7 @@ namespace PatternsConsole.Structural.Decorator
 
         public override PatternCategory Category => PatternCategory.Structural;
         public override string Name => "Decorator";
+        public override string Description => BreakLine("Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.");
         public override string AlsoKnownAs => "Wrapper";
         public override string PageRef => "175";
 

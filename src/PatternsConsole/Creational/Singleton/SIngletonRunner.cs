@@ -24,6 +24,7 @@ namespace PatternsConsole.Creational.Singleton
 
         public override PatternCategory Category => PatternCategory.Creational;
         public override string Name => "Singleton";
+        public override string Description => BreakLine("Ensure a class only has one instance, and provide a global point of access to it.");
         public override string PageRef => "127";
         protected override string[] ConsequencesLines => new[]
         {

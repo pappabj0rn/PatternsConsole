@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace PatternsConsole.Behavioral.Memento
 {
@@ -45,12 +46,7 @@ namespace PatternsConsole.Behavioral.Memento
 
         public override string ToString()
         {
-            var str = Value;
-            foreach (var spacePosition in _state.SpacePositions)
-            {
-                str = str.Insert(spacePosition, " ");
-            }
-            return str;
+            return _state.SpacePositions.Aggregate(Value, (current, spacePosition) => current.Insert(spacePosition, " "));
         }
     }
 }

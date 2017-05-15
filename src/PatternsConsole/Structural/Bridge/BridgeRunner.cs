@@ -11,7 +11,7 @@
         public override PatternCategory Category => PatternCategory.Structural;
         public override string Name => "Bridge";
         public override string Description => BreakLine("Decouple an avstraction from its implementation so that the two can vary independently.");
-        public override string AlsoKnownAs => "Handle/Body";
+        public override string AlsoKnownAs => "Connect/Body";
         public override string PageRef => "151";
 
         protected override string[] ConsequencesLines => new[]

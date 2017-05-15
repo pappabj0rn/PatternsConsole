@@ -4,6 +4,7 @@ namespace PatternsConsole
     {
         Creational,
         Structural,
-        Behavioural
+        Behavioural,
+        Anti
     }
 }

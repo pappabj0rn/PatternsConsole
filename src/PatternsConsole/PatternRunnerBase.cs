@@ -30,7 +30,7 @@ namespace PatternsConsole
             }
         }
 
-        protected abstract string[] ConsequencesLines { get; }
+        protected virtual string[] ConsequencesLines => new [] {""};
 
         protected string BreakLine(string input, string newlineStart = "  ", int lineLength = 60)
         {

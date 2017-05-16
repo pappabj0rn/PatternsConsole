@@ -19,7 +19,7 @@
         public override string Description => BreakLine("Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.");
         public override string PageRef => "185";
 
-        public override string ApplicabilityLeadin => "Use the Facade oattern when";
+        public override string ApplicabilityLeadin => "Use the Facade pattern when";
 
         protected override string[] ApplicabilityLines => new[]
         {
